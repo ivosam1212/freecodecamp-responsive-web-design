@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">3D Printing with Ivo Survey Form</h1>
+    <p id="description">With this survey, you help us improve our current work with 3D printing. This is going
+        to be the first piece of feedback to work with.
+    </p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Enter your name: <input type="text" id="name" required placeholder="Your name"></label>
+        <label id="email-label" for="email">Enter your email: <input type="email" id="email" required placeholder="Your email"></label>
+        <label id="number-label" for="number">Enter your pin number: <input type="number" id="number" min="1111" max="9999" placeholder="Your pin"></label>
+        <label for="dropdown">How many times have you used the website:
+            <select name="dropdown" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">1 to 5 times</option>
+                <option value="2">6 to 15 times</option>
+                <option value="3">more than 15 times</option>
+            </select>
+        </label>Do you like this page?
+        <label for="like"><input id="like" type="radio" name="like" value="1"> Like the page</label>
+        <label for="no-like"><input id="no-like" type="radio" name="like" value="2"> Do not like the page</label>
+        <label for="animals"><input id="animals" type="checkbox" name="preferences" value="3"> Animals</label>
+        <label for="cars"><input id="cars" type="checkbox" name="preferences" value="1"> Cars</label>
+        <label for="food"><input id="food" type="checkbox" name="preferences" value="2"> Food</label>
+        <label for="additional-comments">Anything to add: <textarea name="additional-comments" id="additional-comments"></textarea></label>
+        <input type="submit" name="submit" id="submit">
+    </form>
+  </body>
